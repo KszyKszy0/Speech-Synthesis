@@ -1,0 +1,8 @@
+BATCH_SIZE = 32
+NUM_WORKERS = 4
+LR = 1e-5
+EPOCHS = 1000
+OPTIM = 'adam'
+DEVICE = 'cuda'
+LOAD = False
+SAVEPATH = "models/1_0_0"
