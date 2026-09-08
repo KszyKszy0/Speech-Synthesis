@@ -3,3 +3,5 @@ data
 models
 bpe_tokenizer.json
 tokenizer_data.txt
+runs
+pretrained_models

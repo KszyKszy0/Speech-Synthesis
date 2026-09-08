@@ -40,6 +40,9 @@ class SpeechDataset(Dataset):
         # This requires (**channels**, frames)
         audio_mel_spectogram = self.mel_transform(audio)
 
+        # Convert to log scale
+        audio_mel_spectogram = torch.log10(torch.clamp(audio_mel_spectogram, min=1e-5))
+
         # This returns (channels, n_mels, time)
         return audio_mel_spectogram
 
